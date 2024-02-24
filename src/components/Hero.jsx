@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
+const isMobile = window.innerWidth <= 800;
+
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -21,10 +23,15 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I am a Fullstack Developer
           </p>
+          {isMobile ?
+            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            Because u are viewing on a mobile device the 3D models could not be rendered in due to hardware limitations.
+          </p>
+           : null}
         </div>
       </div>
 
-      <ComputersCanvas />
+      {isMobile ? null : <ComputersCanvas />}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
