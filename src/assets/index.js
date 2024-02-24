@@ -25,9 +25,10 @@ import mcdonalds from "./company/mcdonalds.png";
 import sparkx from "./company/sparkx.png";
 import donutello from "./company/donutello.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import pitchPlease from "./PitchPlease.png";
+import csorc from "./project-1.png";
+
+import linkedIn from "./LinkedIn.png"
 
 export {
   backend,
@@ -54,7 +55,7 @@ export {
   mcdonalds,
   sparkx,
   donutello,
-  carrent,
-  jobit,
-  tripguide,
+  pitchPlease,
+  csorc,
+  linkedIn
 };

@@ -19,6 +19,7 @@
   display: block;
 }
 
+/* VOOR GITHUB */
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -31,6 +32,13 @@
     #434343,
     #000000
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* VOOR LINKED IN  */
+.blue-gradient {
+  background: #0274b3; /* fallback for older browsers */
+  background: -webkit-linear-gradient(to right, #0274b3, #001529); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0274b3, #001529); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .violet-gradient {
