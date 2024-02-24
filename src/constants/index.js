@@ -20,7 +20,10 @@ import {
   csorc,
   pitchPlease,
   linkedIn,
-  github
+  github,
+  B120,
+  S150,
+  bungeeJump
 } from "../assets";
 
 export const navLinks = [
@@ -224,4 +227,19 @@ const projects = [
   // },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const achievements = [
+  {
+    name: "Almost benching 120 kg",
+    video: B120
+  },
+  {
+    name: "Squatting 150 kg",
+    video: S150
+  },
+  {
+    name: "Overcomming my fear of heights",
+    video: bungeeJump
+  }
+]
+
+export { services, technologies, experiences, testimonials, projects, achievements };

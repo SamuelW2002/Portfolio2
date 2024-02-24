@@ -28,7 +28,13 @@ import donutello from "./company/donutello.png";
 import pitchPlease from "./PitchPlease.png";
 import csorc from "./project-1.png";
 
-import linkedIn from "./LinkedIn.png"
+import linkedIn from "./LinkedIn.png";
+
+import B120 from "./120B.mp4";
+import S150 from "./150S.mp4";
+import bungeeJump from "./bungeeJump.mp4";
+
+
 
 export {
   backend,
@@ -57,5 +63,8 @@ export {
   donutello,
   pitchPlease,
   csorc,
-  linkedIn
+  linkedIn,
+  B120,
+  S150,
+  bungeeJump
 };
