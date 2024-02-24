@@ -6,7 +6,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import java from "./tech/java.png";
+import java from "./tech/javaLogo.png";
 import c from "./tech/c.png";
 import sql from "./tech/sql.jpg";
 import angular from "./tech/angular.png";
