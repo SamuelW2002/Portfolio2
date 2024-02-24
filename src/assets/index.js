@@ -7,18 +7,18 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import java from "./tech/javaLogo.png";
-import c from "./tech/c.png";
-import sql from "./tech/sql.jpg";
-import angular from "./tech/angular.png";
-import vue from "./tech/vue.png";
+import c from "./tech/cLogo.png";
+import sql from "./tech/sqlLogo.jpg";
+import angular from "./tech/angularLogo.png";
+import vue from "./tech/vueLogo.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
+import mongodb from "./tech/mongodbLogo.png";
+import nodejs from "./tech/nodejsLogo.png";
 import threejs from "./tech/threejs.svg";
 
 import mcdonalds from "./company/mcdonalds.png";
