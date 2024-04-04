@@ -51,7 +51,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Fitness Enthousiast",
+    title: "Fitness Enthusiast",
     icon: fitness,
   },
   {
