@@ -23,7 +23,11 @@ import {
   github,
   B120,
   S150,
-  bungeeJump
+  bungeeJump,
+  mediaan,
+  azure,
+  azureFunctions,
+  skillseeker
 } from "../assets";
 
 export const navLinks = [
@@ -105,22 +109,17 @@ const technologies = [
     name: "Vue",
     icon: vue,
   },
+  {
+    name: "Azure",
+    icon: azure,
+  },
+  {
+    name: "AzureFunctions",
+    icon: azureFunctions,
+  }
 ];
 
 const experiences = [
-  {
-    title: "Kitchen help",
-    company_name: "McDonald's",
-    icon: mcdonalds,
-    iconBg: "#ea0000",
-    date: "July 2021 - August 2021",
-    points: [
-      "Preparing food and assembling orders.",
-      "Handling transactions.",
-      "Cleaning the lobby.",
-      "Operating the drive-thru.",
-    ],
-  },
   {
     title: "Salesman",
     company_name: "Donutello",
@@ -158,6 +157,18 @@ const experiences = [
       "Supporting customers when help is needed.",
     ],
   },
+  {
+    title: "Software Developer/Cloud Architect",
+    company_name: "Mediaan",
+    icon: mediaan,
+    iconBg: "#FFFFFF",
+    date: "Februari 2024 - June 2024",
+    points: [
+      "Developing a Spring Boot Java backend.",
+      "Setting up a Azure cloud infrastructure.",
+      "Working with an Agile methodology.",
+    ],
+  }
 ];
 
 const testimonials = [
@@ -204,27 +215,27 @@ const projects = [
     imageLink: linkedIn,
     imageColor: "linkedIn"
   },
-  // {
-  //   name: "Trip Guide",
-  //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "supabase",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: tripguide,
-  //   source_code_link: "https://github.com/",
-  // },
+  {
+    name: "SkillSeeker",
+    description:
+      "We used a graph database and Dijkstra's Algorithm to create an advanced filtering system that allows better employee selection for projects.",
+    tags: [
+      {
+        name: "Angular",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Azure",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Spring Boot",
+        color: "green-text-gradient",
+      },
+    ],
+    image: skillseeker,
+    source_code_link: "https://github.com/",
+  },
 ];
 
 const achievements = [
