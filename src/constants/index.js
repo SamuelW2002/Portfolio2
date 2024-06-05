@@ -27,7 +27,8 @@ import {
   mediaan,
   azure,
   azureFunctions,
-  skillseeker
+  skillseeker,
+  peterKraus
 } from "../assets";
 
 export const navLinks = [
@@ -172,14 +173,14 @@ const experiences = [
 ];
 
 const testimonials = [
-  // {
-  //   testimonial:
-  //     "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-  //   name: "Sara Lee",
-  //   designation: "CFO",
-  //   company: "Acme Co",
-  //   image: "https://randomuser.me/api/portraits/women/4.jpg",
-  // },
+  {
+    testimonial:
+      "During his internship, he has properly executed his software development skills and made a positive contribution to our project. Over time, he has also become more open on an interpersonal level, which has benefited his collaboration with colleagues. Although he still has much to learn, I am convinced that with the necessary work experience, he will become a promising software consultant.",
+    name: "Peter Kraus",
+    designation: "Sales manager",
+    company: "Mediaan",
+    image: peterKraus,
+  },
 ];
 
 const projects = [

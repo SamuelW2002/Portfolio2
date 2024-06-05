@@ -37,6 +37,7 @@ import linkedIn from "./LinkedIn.png";
 import B120 from "./120B.mp4";
 import S150 from "./150S.mp4";
 import bungeeJump from "./bungeeJump.mp4";
+import peterKraus from "./peterKraus.jpg";
 
 
 
@@ -74,5 +75,6 @@ export {
   mediaan,
   azure,
   azureFunctions,
-  skillseeker
+  skillseeker,
+  peterKraus
 };
