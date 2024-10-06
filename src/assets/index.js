@@ -20,13 +20,12 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodbLogo.png";
 import nodejs from "./tech/nodejsLogo.png";
 import threejs from "./tech/threejs.svg";
-import mediaan from "./company/mediaan.png"
 import azure from "./tech/azure.jpg"
 import azureFunctions from "./tech/azureFunctions.png"
 
-import mcdonalds from "./company/mcdonalds.png";
-import sparkx from "./company/sparkx.png";
-import donutello from "./company/donutello.png";
+import cegeka from "./company/cegeka.png"
+import madict from "./company/madict.png"
+import mediaan from "./company/mediaan.png"
 
 import pitchPlease from "./PitchPlease.png";
 import csorc from "./project-1.png";
@@ -63,16 +62,17 @@ export {
   mongodb,
   nodejs,
   threejs,
-  mcdonalds,
-  sparkx,
-  donutello,
   pitchPlease,
   csorc,
   linkedIn,
   B120,
   S150,
   bungeeJump,
+
   mediaan,
+  cegeka,
+  madict,
+  
   azure,
   azureFunctions,
   skillseeker,

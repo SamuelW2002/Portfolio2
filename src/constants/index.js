@@ -13,9 +13,6 @@ import {
   css,
   mongodb,
   docker,
-  mcdonalds,
-  donutello,
-  sparkx,
   threejs,
   csorc,
   pitchPlease,
@@ -24,7 +21,11 @@ import {
   B120,
   S150,
   bungeeJump,
+
   mediaan,
+  cegeka,
+  madict,
+
   azure,
   azureFunctions,
   skillseeker,
@@ -122,40 +123,15 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Salesman",
-    company_name: "Donutello",
-    icon: donutello,
-    iconBg: "#E6DEDD",
-    date: "Sep 2021 - Dec 2021",
+    title: "Backend Software Developer",
+    company_name: "Cegeka",
+    icon: cegeka,
+    iconBg: "#FFFFFF",
+    date: "Oktober 2023 - December 2023",
     points: [
-      "Preparing donuts, waffles and milkshakes.",
-      "Handling transactions.",
-      "Making sure the costumers have a pleasent experience.",
-    ],
-  },
-  {
-    title: "Kitchen help",
-    company_name: "McDonald's",
-    icon: mcdonalds,
-    iconBg: "#ea0000",
-    date: "July 2022 - August 2022",
-    points: [
-      "Preparing food and assembling orders.",
-      "Handling transactions.",
-      "Cleaning the lobby.",
-      "Operating the drive-thru.",
-    ],
-  },
-  {
-    title: "Entertainer",
-    company_name: "Sparkx",
-    icon: sparkx,
-    iconBg: "#003249",
-    date: "July 2023 - August 2023",
-    points: [
-      "Entertaining costumers and maintaining a happy atmosphere.",
-      "Starting, maintaining and shutting down various entertainment machines.",
-      "Supporting customers when help is needed.",
+      "Developing the CSORC backend in Java Spring Boot",
+      "Creating an user friendly interface using Vue.js",
+      "Applying Agile principles for a streamlined development process",
     ],
   },
   {
@@ -165,9 +141,23 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: "Februari 2024 - June 2024",
     points: [
-      "Developing a Spring Boot Java backend.",
-      "Setting up a Azure cloud infrastructure.",
-      "Working with an Agile methodology.",
+      "Developing the SkillSeeker backend using Java Spring Boot",
+      "Allowing SkillSeeker to be used around the world by setting up an Azure Cloud Infrastructure",
+      "Creating pipelines for seamless deployment to the cloud",
+      "Leading a team of developers and meeting with customers to deliver the best possible result"
+    ],
+  },
+  {
+    title: "IT Support Engineer",
+    company_name: "MaDict",
+    icon: madict,
+    iconBg: "#FFFFFF",
+    date: "Juli 2024 - Present",
+    points: [
+      "Configuring and maintaining network infrastructure using Fortinet firewalls and a variety of switches",
+      "Setting up O365 tenants for clients and solving a wide variety of Office related issues",
+      "Creating and maintaining Windows Servers for medium and small businesses",
+      "Using a wide variety of MSP tools to provide the customer with the best IT experience"
     ],
   }
 ];
