@@ -1,54 +1,25 @@
-import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
-
-const isMobile = window.innerWidth <= 800;
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
-      <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+    <section className={`relative w-full h-[70vh] mx-auto`}>
+      <div className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
+        <div className="flex flex-col justify-center items-center mt-5">
+          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
+          <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Samuel</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a Fullstack Developer
-          </p>
-          {isMobile ?
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Because u are viewing on a mobile device the 3D models could not be rendered in due to hardware limitations.
-          </p>
-           : null}
+          <motion.h1 variants={fadeIn("", "", 0.1, 1)} className={`${styles.heroHeadText} text-white`}>
+            <span className="text-[#915EFF]">Samuel Wouters</span>
+          </motion.h1>
+        
+          <motion.p variants={fadeIn("", "", 0.2, 1)} className="mt-2 text-secondary text-[17px] max-w-3xl leading-[30px]">
+            I am a .NET developer with additional skills in frontend, cloud technologies, and managed service provider (MSP) environments. After a productive workday, I like to unwind by hitting the gym or relaxing with friends over a good board game.
+          </motion.p>
         </div>
-      </div>
-
-      {isMobile ? null : <ComputersCanvas />}
-
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
-            />
-          </div>
-        </a>
       </div>
     </section>
   );
