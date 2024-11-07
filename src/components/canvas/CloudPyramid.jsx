@@ -4,14 +4,14 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, Float } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-function CloudPyramid(props) {
-  const { nodes, materials } = useGLTF('src/assets/BlenderExports/Cloud_Pyramid_Export.glb')
+function CloudPyramid() {
+  const { nodes, materials } = useGLTF('/Cloud_Pyramid_Export.glb')
   return (
-    <group {...props} dispose={null} scale={2.5}>
+    <group {...props} dispose={null} scale={2}>
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Cone.geometry}
+        geometry={nodes.Cylinder.geometry}
         material={materials['Material.001']}
       />
     </group>
@@ -24,9 +24,9 @@ const CloudPyramidCanvas = () => {
         <Canvas
           dpr={[1, 2]}
           gl={{ preserveDrawingBuffer: true }}
+          camera={{position:[20,3,5], fov:25}}
         >
           <Float speed={3} rotationIntensity={5} floatIntensity={2}>
-          <ambientLight intensity={1.5} />
             <Suspense fallback={<CanvasLoader />}>
               <OrbitControls enableZoom={false} />
               <CloudPyramid/>
@@ -41,4 +41,4 @@ const CloudPyramidCanvas = () => {
 export default CloudPyramidCanvas;
   
 
-useGLTF.preload('src/assets/BlenderExports/Cloud_Pyramid_Export.glb')
+useGLTF.preload('/Cloud_Pyramid_Export.gltf')

@@ -5,7 +5,7 @@ import { OrbitControls, Preload, Float } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 function FrontendPrism(props) {
-  const { nodes, materials } = useGLTF('src/assets/BlenderExports/Frontend_Prism_Export.glb')
+  const { nodes, materials } = useGLTF('/Frontend_Prism_Export.glb')
   return (
     <group {...props} dispose={null} scale={2}>
       <mesh
@@ -17,6 +17,8 @@ function FrontendPrism(props) {
     </group>
   )
 }
+
+
 
 const FrontendPrismCanvas = () => {
   return (
@@ -40,4 +42,4 @@ const FrontendPrismCanvas = () => {
 
 export default FrontendPrismCanvas;
 
-useGLTF.preload('src/assets/BlenderExports/Frontend_Prism_Export.glb')
+useGLTF.preload('/Frontend_Prism_Export.glb')
