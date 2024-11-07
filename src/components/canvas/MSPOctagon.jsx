@@ -4,10 +4,10 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, Float } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-function MSPOctagon(props) {
-  const { nodes, materials } = useGLTF('/MSP_Octagon_Export.glb')
+function MSPOctagon() {
+  const { nodes, materials } = useGLTF('MSP_Octagon_Export.glb')
   return (
-    <group {...props} dispose={null} scale={[2, 2, 2]}>
+    <group dispose={null} scale={[2, 2, 2]}>
       <mesh
         castShadow
         receiveShadow
@@ -40,4 +40,4 @@ const MSPOctagonCanvas = () => {
   
 export default MSPOctagonCanvas;
 
-useGLTF.preload('/MSP_Octagon_Export.glb')
+useGLTF.preload('MSP_Octagon_Export.glb')

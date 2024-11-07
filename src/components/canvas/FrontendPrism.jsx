@@ -4,10 +4,10 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, Float } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-function FrontendPrism(props) {
-  const { nodes, materials } = useGLTF('/Frontend_Prism_Export.glb')
+function FrontendPrism() {
+  const { nodes, materials } = useGLTF('Frontend_Prism_Export.glb')
   return (
-    <group {...props} dispose={null} scale={2}>
+    <group dispose={null} scale={2}>
       <mesh
         castShadow
         receiveShadow
@@ -42,4 +42,4 @@ const FrontendPrismCanvas = () => {
 
 export default FrontendPrismCanvas;
 
-useGLTF.preload('/Frontend_Prism_Export.glb')
+useGLTF.preload('Frontend_Prism_Export.glb')
