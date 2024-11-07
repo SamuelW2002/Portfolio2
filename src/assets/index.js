@@ -13,7 +13,7 @@ import linkedIn from "./icons/LinkedIn.png";
 
 //Backend Cube
 import C_Right_Side from "./tech/Backend_Cube/C_Right_Side.png"
-import Java_left_Side from "./tech/Backend_Cube/Java_left_Side.png"
+import Java_left_Side from "./tech/Backend_Cube/Java_Left_Side.png"
 import NET_Core_Front_Side from "./tech/Backend_Cube/NET_Core_Front_Side.png"
 import API_Back_Side from "./tech/Backend_Cube/API_Back_Side.png"
 import Python_Bottom_Side from "./tech/Backend_Cube/Python_Bottom_Side.png"
