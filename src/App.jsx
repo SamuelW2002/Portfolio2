@@ -1,7 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
 import {Experience, Feedbacks, Hero, Navbar, Works, ServiceCardGrid } from "./components";
-import OtherAchievements from "./components/OtherAchievements";
 
 const App = () => {
   return (
@@ -13,7 +12,6 @@ const App = () => {
         <Experience />
         <Works />
         <Feedbacks />
-        <OtherAchievements/>
       </div>
     </BrowserRouter>
   );

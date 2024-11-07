@@ -4,9 +4,6 @@ import {
   csorc,
   pitchPlease,
   linkedIn,
-  B120,
-  S150,
-  bungeeJump,
   mediaan,
   cegeka,
   madict,
@@ -193,19 +190,4 @@ const projects = [
   },
 ];
 
-const achievements = [
-  {
-    name: "Almost benching 120 kg",
-    video: B120
-  },
-  {
-    name: "Squatting 150 kg",
-    video: S150
-  },
-  {
-    name: "Overcomming my fear of heights",
-    video: bungeeJump
-  }
-]
-
-export { skillsModelsThreeJS, skillsModelsFromBlender, backendTechnologies, experiences, testimonials, projects, achievements };
+export { skillsModelsThreeJS, skillsModelsFromBlender, backendTechnologies, experiences, testimonials, projects };

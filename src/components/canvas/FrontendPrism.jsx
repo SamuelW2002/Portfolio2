@@ -18,8 +18,6 @@ function FrontendPrism(props) {
   )
 }
 
-useGLTF.preload('/Frontend_Prism.glb')
-
 const FrontendPrismCanvas = () => {
   return (
     <div style={{ width: '400px', height: '400px' }}> {}

@@ -29,11 +29,6 @@ import pitchPlease from "./projects/PitchPlease.png";
 import csorc from "./projects/CSORC.png";
 import skillseeker from "./projects/SkillSeeker.png"
 
-//Other Achievements
-import B120 from "./otherAchievements/120B.mp4";
-import S150 from "./otherAchievements/150S.mp4";
-import bungeeJump from "./otherAchievements/bungeeJump.mp4";
-
 //Background
 import objectBackground from "./objectBackgrounds/originalBackground.png";
 
@@ -48,9 +43,6 @@ export {
   pitchPlease,
   csorc,
   linkedIn,
-  B120,
-  S150,
-  bungeeJump,
   mediaan,
   cegeka,
   madict,
