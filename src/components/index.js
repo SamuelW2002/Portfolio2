@@ -1,6 +1,5 @@
 import Hero from "./Hero";
 import Navbar from "./Navbar";
-import CubeCanvas from './canvas/Cube';
 import Experience from "./Experience";
 import Works from "./Works";
 import Feedbacks from "./Feedbacks";
@@ -15,6 +14,5 @@ export {
   Works,
   Feedbacks,
   CanvasLoader,
-  CubeCanvas,
-  ServiceCardGrid
+  ServiceCardGrid,
 };

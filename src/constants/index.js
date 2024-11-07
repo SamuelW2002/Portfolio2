@@ -1,4 +1,4 @@
-import { CubeCanvas, FrontendPrismCanvas, PyramidCanvas } from "../components/canvas"
+import { BackendCubeCanvas, CloudPyramidCanvas, FrontendPrismCanvas, MSPOctagonCanvas } from "../components/canvas"
 
 import {
   csorc,
@@ -65,7 +65,7 @@ const backendTechnologies = [
 const skillsModelsThreeJS = [
   {
     title: "Backend Developer",
-    object: CubeCanvas,
+    object: BackendCubeCanvas,
     props: { icons: backendTechnologies } 
   }
 ];
@@ -77,18 +77,18 @@ const skillsModelsFromBlender = [
   },
   {
     title: "Cloud Developer",
-    object: PyramidCanvas,
+    object: CloudPyramidCanvas,
   },
   {
-    title: "MSP Provider",
-    object: PyramidCanvas,
+    title: "Managed Service Provider",
+    object: MSPOctagonCanvas,
   }
 ]
 
 const experiences = [
   {
     title: "Backend Software Developer",
-    company_name: "Cegeka",
+    company_name: "Cegeka | School Collaboration Project",
     icon: cegeka,
     iconBg: "#FFFFFF",
     date: "Oktober 2023 - December 2023",
@@ -99,8 +99,8 @@ const experiences = [
     ],
   },
   {
-    title: "Software Developer/Cloud Architect",
-    company_name: "Mediaan",
+    title: "Software Developer | Cloud Architect",
+    company_name: "Mediaan | Internship",
     icon: mediaan,
     iconBg: "#FFFFFF",
     date: "Februari 2024 - June 2024",

@@ -1,9 +1,11 @@
-import CubeCanvas from './Cube';
+import BackendCubeCanvas from './BackendCube';
 import FrontendPrismCanvas from './FrontendPrism';
-import PyramidCanvas from './Pyramid';
+import CloudPyramidCanvas from './CloudPyramid';
+import MSPOctagonCanvas from './MSPOctagon';
 
 export {
-  CubeCanvas,
+  BackendCubeCanvas,
   FrontendPrismCanvas,
-  PyramidCanvas
+  CloudPyramidCanvas,
+  MSPOctagonCanvas
 };
