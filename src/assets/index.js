@@ -11,24 +11,6 @@ import close from "./icons/close.svg";
 import peterKraus from "./icons/peterKraus.jpg";
 import linkedIn from "./icons/LinkedIn.png";
 
-//Skills
-import java from "./tech/javaLogo.png";
-import c from "./tech/cLogo.png";
-import sql from "./tech/sqlLogo.jpg";
-import angular from "./tech/angularLogo.png";
-import vue from "./tech/vueLogo.png";
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodbLogo.png";
-import nodejs from "./tech/nodejsLogo.png";
-import threejs from "./tech/threejs.svg";
-import azure from "./tech/azure.jpg"
-import azureFunctions from "./tech/azureFunctions.png"
-
 //Backend Cube
 import C_Right_Side from "./tech/Backend_Cube/C_Right_Side.png"
 import Java_left_Side from "./tech/Backend_Cube/Java_left_Side.png"
@@ -63,20 +45,6 @@ export {
   github,
   menu,
   close,
-  java,
-  c,
-  sql,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  angular,
-  vue,
-  mongodb,
-  nodejs,
-  threejs,
   pitchPlease,
   csorc,
   linkedIn,
@@ -86,8 +54,6 @@ export {
   mediaan,
   cegeka,
   madict,
-  azure,
-  azureFunctions,
   skillseeker,
   peterKraus,
   cloud,
