@@ -1,35 +1,23 @@
+import { BackendCubeCanvas, CloudPyramidCanvas, FrontendPrismCanvas, MSPOctagonCanvas } from "../components/canvas"
+
 import {
-  fitness,
-  backend,
-  gamer,
-  web,
-  java,
-  c,
-  sql,
-  angular,
-  vue,
-  javascript,
-  html,
-  css,
-  mongodb,
-  docker,
-  threejs,
   csorc,
   pitchPlease,
   linkedIn,
-  github,
   B120,
   S150,
   bungeeJump,
-
   mediaan,
   cegeka,
   madict,
-
-  azure,
-  azureFunctions,
   skillseeker,
-  peterKraus
+  peterKraus,
+  C_Right_Side,
+  API_Back_Side,
+  Java_left_Side,
+  NET_Core_Front_Side,
+  Python_Bottom_Side,
+  Spring_Boot_Top_Side
 } from "../assets";
 
 export const navLinks = [
@@ -47,84 +35,60 @@ export const navLinks = [
   },
 ];
 
-const services = [
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Fitness Enthusiast",
-    icon: fitness,
-  },
-  {
-    title: "Gamer",
-    icon: gamer,
-  },
-];
-
-const technologies = [
+const backendTechnologies = [
   {
     name: "Java",
-    icon: java,
+    icon: API_Back_Side,
   },
   {
     name: "C#",
-    icon: c,
+    icon: NET_Core_Front_Side,
   },
   {
     name: "SQL",
-    icon: sql,
+    icon: Spring_Boot_Top_Side,
   },
   {
     name: "HTML 5",
-    icon: html,
+    icon: Python_Bottom_Side,
   },
   {
     name: "CSS 3",
-    icon: css,
+    icon: Java_left_Side,
   },
   {
     name: "JavaScript",
-    icon: javascript,
-  },
+    icon: C_Right_Side,
+  }
+]
+
+const skillsModelsThreeJS = [
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
-  {
-    name: "Angular",
-    icon: angular,
-  },
-  {
-    name: "Vue",
-    icon: vue,
-  },
-  {
-    name: "Azure",
-    icon: azure,
-  },
-  {
-    name: "AzureFunctions",
-    icon: azureFunctions,
+    title: "Backend Developer",
+    object: BackendCubeCanvas,
+    props: { icons: backendTechnologies } 
   }
 ];
+
+const skillsModelsFromBlender = [
+  {
+    title: "Web Developer",
+    object: FrontendPrismCanvas,
+  },
+  {
+    title: "Cloud Developer",
+    object: CloudPyramidCanvas,
+  },
+  {
+    title: "Managed Service Provider",
+    object: MSPOctagonCanvas,
+  }
+]
 
 const experiences = [
   {
     title: "Backend Software Developer",
-    company_name: "Cegeka",
+    company_name: "Cegeka | School Collaboration Project",
     icon: cegeka,
     iconBg: "#FFFFFF",
     date: "Oktober 2023 - December 2023",
@@ -135,8 +99,8 @@ const experiences = [
     ],
   },
   {
-    title: "Software Developer/Cloud Architect",
-    company_name: "Mediaan",
+    title: "Software Developer | Cloud Architect",
+    company_name: "Mediaan | Internship",
     icon: mediaan,
     iconBg: "#FFFFFF",
     date: "Februari 2024 - June 2024",
@@ -244,4 +208,4 @@ const achievements = [
   }
 ]
 
-export { services, technologies, experiences, testimonials, projects, achievements };
+export { skillsModelsThreeJS, skillsModelsFromBlender, backendTechnologies, experiences, testimonials, projects, achievements };

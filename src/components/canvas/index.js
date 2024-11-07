@@ -1,6 +1,11 @@
-import EarthCanvas from "./Earth";
-import BallCanvas from "./Ball";
-import ComputersCanvas from "./Computers";
-import StarsCanvas from "./Stars";
+import BackendCubeCanvas from './BackendCube';
+import FrontendPrismCanvas from './FrontendPrism';
+import CloudPyramidCanvas from './CloudPyramid';
+import MSPOctagonCanvas from './MSPOctagon';
 
-export { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas };
+export {
+  BackendCubeCanvas,
+  FrontendPrismCanvas,
+  CloudPyramidCanvas,
+  MSPOctagonCanvas
+};
