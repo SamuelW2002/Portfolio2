@@ -18,8 +18,13 @@ const ProjectCard = ({
   imageLink,
   imageColor
 }) => {
+  const delay = window.innerWidth < 768 ? 0.1 : index * 0.5;
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", delay, 0.75)}
+    initial="hidden" 
+    whileInView="show" 
+    viewport={{ once: true, amount: 0.05 }}
+    >
       <Tilt
         options={{
           max: 45,
@@ -74,7 +79,7 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
