@@ -34,8 +34,13 @@ const ProjectCard = ({
       transition={{ duration: 0.5 }}
       className="absolute"
     >
-
-        <div className="bg-tertiary p-5 rounded-2xl max-w-[600px]"
+      <Tilt
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className="bg-tertiary p-5 rounded-2xl max-w-[600px]"
       >
         <div className="relative w-full h-full">
           <img
@@ -78,7 +83,7 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </div>
+      </Tilt>
     </motion.div>
   );
 };
@@ -95,20 +100,14 @@ const Projects = () => {
   };
 
   const bind = useDrag(
-    ({ swipe: [swipeX], movement: [moveX], memo = "pan-y" }) => {
-      if (Math.abs(moveX) > 10) {
-        memo = "none";
-      }
-  
+    ({ swipe: [swipeX] }) => {
       if (swipeX === -1) {
         handleNext();
       } else if (swipeX === 1) {
         handlePrev();
       }
-  
-      return memo;
     },
-    { axis: "x", filterTaps: true }
+    { axis: 'x', filterTaps: true }
   );
 
   return (
@@ -122,11 +121,11 @@ const Projects = () => {
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
-      <div {...bind()} style={{ touchAction: bind().memo }} className="xs:mb-10 md:mt-20 flex items-center justify-center relative h-[600px]">
+      <div {...bind()} className="xs:mb-10 md:mt-20 flex items-center justify-center relative h-[600px]">
         {currentIndex !== 0 && (
             <button
             onClick={handlePrev}
-            className="absolute left-10 text-white bg-blue-500 rounded-full p-4 z-10 hidden-below-small"
+            className="absolute left-10 text-white bg-blue-500 rounded-full p-4 z-10"
             >
             {"<"}
             </button>
@@ -158,7 +157,7 @@ const Projects = () => {
         {currentIndex !== projects.length - 1 && (
             <button
             onClick={handleNext}
-            className="absolute right-10 text-white bg-blue-500 rounded-full p-4 z-10 hidden-below-small"
+            className="absolute right-10 text-white bg-blue-500 rounded-full p-4 z-10"
             >
             {">"}
             </button>
