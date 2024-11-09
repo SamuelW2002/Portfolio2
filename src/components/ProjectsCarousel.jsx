@@ -34,13 +34,8 @@ const ProjectCard = ({
       transition={{ duration: 0.5 }}
       className="absolute"
     >
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary p-5 rounded-2xl max-w-[600px]"
+
+        <div className="bg-tertiary p-5 rounded-2xl max-w-[600px]"
       >
         <div className="relative w-full h-full">
           <img
@@ -83,7 +78,7 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
+      </div>
     </motion.div>
   );
 };
