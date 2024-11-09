@@ -99,14 +99,10 @@ const Projects = () => {
     setCurrentIndex((prevIndex) => prevIndex - 1);
   };
 
-  const [touchAction, setTouchAction] = useState("auto");
-
   const bind = useDrag(
-    ({ swipe: [swipeX], movement: [moveX], memo = touchAction }) => {
+    ({ swipe: [swipeX], movement: [moveX], memo = "pan-y" }) => {
       if (Math.abs(moveX) > 10) {
-        setTouchAction("none");
-      } else {
-        setTouchAction("auto");
+        memo = "none";
       }
   
       if (swipeX === -1) {
@@ -117,7 +113,7 @@ const Projects = () => {
   
       return memo;
     },
-    { axis: 'x', filterTaps: true }
+    { axis: "x", filterTaps: true }
   );
 
   return (
@@ -131,7 +127,7 @@ const Projects = () => {
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
-      <div {...bind()} style={{ touchAction }} className="xs:mb-10 md:mt-20 flex items-center justify-center relative h-[600px]">
+      <div {...bind()} style={{ touchAction: bind().memo }} className="xs:mb-10 md:mt-20 flex items-center justify-center relative h-[600px]">
         {currentIndex !== 0 && (
             <button
             onClick={handlePrev}
