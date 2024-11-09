@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { useDrag } from '@use-gesture/react';
 
 const ProjectCard = ({
   index,
@@ -39,13 +40,13 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[500px] w-full"
+        className="bg-tertiary p-5 rounded-2xl max-w-[600px]"
       >
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-full">
           <img
             src={image}
             alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full object-cover rounded-2xl aspect-w-1 aspect-h-1"
           />
 
           {link ? (
@@ -91,14 +92,23 @@ const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
+    setCurrentIndex((prevIndex) => prevIndex + 1);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? projects.length - 1 : prevIndex - 1
-    );
+    setCurrentIndex((prevIndex) => prevIndex - 1);
   };
+
+  const bind = useDrag(
+    ({ swipe: [swipeX] }) => {
+      if (swipeX === -1) {
+        handleNext();
+      } else if (swipeX === 1) {
+        handlePrev();
+      }
+    },
+    { axis: 'x', filterTaps: true }
+  );
 
   return (
     <>
@@ -111,41 +121,47 @@ const Projects = () => {
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          Here are some of my projects showcasing the SOLID principles in .NET.
-        </motion.p>
-      </div>
-
-      <div className="mt-20 flex items-center justify-center relative h-[600px]">
-        <button onClick={handlePrev} className="absolute left-10 text-white bg-blue-500 rounded-full p-2">
-          {"<"}
-        </button>
+      <div {...bind()} style={{ touchAction: 'none' }} className="xs:mb-10 md:mt-20 flex items-center justify-center relative h-[600px]">
+        {currentIndex !== 0 && (
+            <button
+            onClick={handlePrev}
+            className="absolute left-10 text-white bg-blue-500 rounded-full p-4 z-10 hidden-below-small"
+            >
+            {"<"}
+            </button>
+        )}
 
         {projects.map((project, index) => {
-          let position = "center";
-          if (index === currentIndex - 1 || (currentIndex === 0 && index === projects.length - 1)) {
-            position = "left";
-          } else if (index === currentIndex + 1 || (currentIndex === projects.length - 1 && index === 0)) {
-            position = "right";
-          }
+            let position = "hidden"; 
 
-          return (
-            <ProjectCard
-              key={`project-${index}`}
-              {...project}
-              isFocused={index === currentIndex}
-              position={position}
-            />
-          );
+            if (index === currentIndex) {
+                position = "center";
+            } else if (index === currentIndex - 1){
+                position = "left";
+            } else if (index === currentIndex + 1){
+                position = "right";
+            }
+
+            if (position !== "hidden") {
+                return (
+                    <ProjectCard
+                      key={`project-${index}`}
+                      {...project}
+                      isFocused={index === currentIndex}
+                      position={position}
+                    />
+                  );
+            }
         })}
 
-        <button onClick={handleNext} className="absolute right-10 text-white bg-blue-500 rounded-full p-2">
-          {">"}
-        </button>
+        {currentIndex !== projects.length - 1 && (
+            <button
+            onClick={handleNext}
+            className="absolute right-10 text-white bg-blue-500 rounded-full p-4 z-10 hidden-below-small"
+            >
+            {">"}
+            </button>
+        )}
       </div>
     </>
   );

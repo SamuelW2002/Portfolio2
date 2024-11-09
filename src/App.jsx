@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import {Experience, Feedbacks, Hero, Projects, ServiceCardGrid } from "./components";
+import {Experience, Feedbacks, Hero, Projects, ProjectsCarousel, ServiceCardGrid } from "./components";
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
         <Hero />
         <ServiceCardGrid/>
         <Experience />
-        <Projects />
+        <ProjectsCarousel/>
         <Feedbacks />
       </div>
     </BrowserRouter>

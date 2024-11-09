@@ -152,6 +152,13 @@
   transform: translateZ(0);
 }
 
+@media (max-width: 640px) {
+  .hidden-below-small {
+    display: none;
+  }
+}
+
+
 @keyframes mulShdSpin {
   0%,
   100% {

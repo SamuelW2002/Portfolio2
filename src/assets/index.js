@@ -28,7 +28,7 @@ import mediaan from "./company/mediaan.png"
 import pitchPlease from "./projects/PitchPlease.png";
 import csorc from "./projects/CSORC.png";
 import skillseeker from "./projects/SkillSeeker.png"
-import solid_principles from "./projects/SOLID_Thumbnail.png"
+import solid_principles from "./projects/SOLID_Thumbnail.gif"
 import Portfolio_Thumbnail from "./projects/Portfolio_Thumbnail.webp"
 import StockTracker_Thumbnail from "./projects/StockTracker_Thumbnail.webp"
 

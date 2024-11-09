@@ -4,6 +4,7 @@ import Projects from "./Projects";
 import Feedbacks from "./Feedbacks";
 import CanvasLoader from "./Loader";
 import ServiceCardGrid from "./ServiceCardGrid";
+import ProjectsCarousel from "./ProjectsCarousel";
 
 
 export {
@@ -13,4 +14,5 @@ export {
   Feedbacks,
   CanvasLoader,
   ServiceCardGrid,
+  ProjectsCarousel
 };
