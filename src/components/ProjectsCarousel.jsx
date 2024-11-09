@@ -121,7 +121,7 @@ const Projects = () => {
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
-      <div {...bind()} style={{ touchAction: 'none' }} className="xs:mb-10 md:mt-20 flex items-center justify-center relative h-[600px]">
+      <div {...bind()} className="xs:mb-10 md:mt-20 flex items-center justify-center relative h-[600px]">
         {currentIndex !== 0 && (
             <button
             onClick={handlePrev}
