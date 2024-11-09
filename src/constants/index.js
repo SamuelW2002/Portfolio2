@@ -14,7 +14,11 @@ import {
   Java_left_Side,
   NET_Core_Front_Side,
   Python_Bottom_Side,
-  Spring_Boot_Top_Side
+  Spring_Boot_Top_Side,
+  StockTracker_Thumbnail,
+  Portfolio_Thumbnail,
+  github,
+  solid_principles
 } from "../assets";
 
 export const navLinks = [
@@ -123,18 +127,67 @@ const experiences = [
   }
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "During his internship, he has properly executed his software development skills and made a positive contribution to our project. Over time, he has also become more open on an interpersonal level, which has benefited his collaboration with colleagues. Although he still has much to learn, I am convinced that with the necessary work experience, he will become a promising software consultant.",
-    name: "Peter Kraus",
-    designation: "Sales manager",
-    company: "Mediaan",
-    image: peterKraus,
-  },
-];
-
 const projects = [
+  {
+    name: "StockTracker",
+    description:
+      "Combining my knowledge of Python and Azure Functions I designed my own newsletter that keeps track of the most popular stocks on Reddit.",
+    tags: [
+      {
+        name: "Azure",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "green-text-gradient",
+      },
+    ],
+    image: StockTracker_Thumbnail,
+    //source_code_link: "https://github.com/",
+    //imageLink: github,
+    link: false,
+    //imageColor: "github"
+  },
+  {
+    name: "Portfolio Website",
+    description:
+      "I wanted to create a unique portfolio that stands out, to achieve this I decided to learn blender and React-Three-Fiber from scratch. \n Check out the code and an in depth overview of my Three.js journey on my github page.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "Three.js",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "Blender",
+        color: "red-text-gradient"
+      }
+    ],
+    image: Portfolio_Thumbnail,
+    source_code_link: "https://github.com/SamuelW2002/Portfolio2",
+    link: true,
+    imageLink: github,
+    imageColor: "github"
+  },
+  {
+    name: "SOLID principles in .NET",
+    description:
+      "Designing maintainable and understandable code is very important to me so I made a small console project in .NET highlighting SOLID principles and a Layered Architecture. On the github page u can find an description of why I implemented certain design choices.",
+    tags: [
+      {
+        name: ".NET",
+        color: "blue-text-gradient",
+      }
+    ],
+    image: solid_principles,
+    source_code_link: "https://github.com/SamuelW2002/RestaurantReservationApp",
+    imageLink: github,
+    link: true,
+    imageColor: "github"
+  },
   {
     name: "CSOR²C Portal",
     description:
@@ -187,6 +240,17 @@ const projects = [
     ],
     image: skillseeker,
     source_code_link: "https://github.com/",
+  },
+];
+
+const testimonials = [
+  {
+    testimonial:
+      "During his internship, he has properly executed his software development skills and made a positive contribution to our project. Over time, he has also become more open on an interpersonal level, which has benefited his collaboration with colleagues. Although he still has much to learn, I am convinced that with the necessary work experience, he will become a promising software consultant.",
+    name: "Peter Kraus",
+    designation: "Sales manager",
+    company: "Mediaan",
+    image: peterKraus,
   },
 ];
 

@@ -18,9 +18,8 @@ const ProjectCard = ({
   imageLink,
   imageColor
 }) => {
-  const delay = window.innerWidth < 768 ? 0.1 : index * 0.5;
   return (
-    <motion.div variants={fadeIn("up", "spring", delay, 0.75)}
+    <motion.div variants={fadeIn("up", "spring", 0.5, 0.75)}
     initial="hidden" 
     whileInView="show" 
     viewport={{ once: true, amount: 0.05 }}
@@ -31,9 +30,9 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[500px] w-full w-[300px]'
       >
-        <div className='relative w-full h-[400px]'>
+        <div className='relative w-full h-[300px] sm:h-[500px]'>
           <img
             src={image}
             alt='project_image'
@@ -76,29 +75,20 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+const Projects = () => {
   return (
-    <>
-      <motion.div variants={textVariant()} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+    <div className="w-full flex flex-col items-center justify-center">
+      <motion.div variants={textVariant()} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.1 }}>
+        <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
-      <div className='w-full flex'>
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
-        >
-        </motion.p>
-      </div>
-
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-10 flex flex-wrap gap-7 justify-center'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Projects, "");

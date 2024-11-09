@@ -28,6 +28,9 @@ import mediaan from "./company/mediaan.png"
 import pitchPlease from "./projects/PitchPlease.png";
 import csorc from "./projects/CSORC.png";
 import skillseeker from "./projects/SkillSeeker.png"
+import solid_principles from "./projects/SOLID_Thumbnail.png"
+import Portfolio_Thumbnail from "./projects/Portfolio_Thumbnail.webp"
+import StockTracker_Thumbnail from "./projects/StockTracker_Thumbnail.webp"
 
 //Background
 import objectBackground from "./objectBackgrounds/originalBackground.png";
@@ -40,13 +43,18 @@ export {
   github,
   menu,
   close,
+
   pitchPlease,
   csorc,
+  skillseeker,
+  Portfolio_Thumbnail,
+  StockTracker_Thumbnail,
+  solid_principles,
+
   linkedIn,
   mediaan,
   cegeka,
   madict,
-  skillseeker,
   peterKraus,
   cloud,
   C_Right_Side,
