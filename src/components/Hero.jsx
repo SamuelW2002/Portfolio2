@@ -17,7 +17,7 @@ const Hero = () => {
           </motion.h1>
         
           <motion.p variants={fadeIn("", "", 0.2, 1)} className="mt-2 text-secondary text-[17px] max-w-3xl leading-[30px]">
-            I am a .NET developer with additional skills in frontend, cloud technologies, and managed service provider (MSP) environments. After a productive workday, I like to unwind by hitting the gym or relaxing with friends over a good board game.
+            I am a .NET developer with a bachelor in applied computer science and additional skills in frontend, cloud technologies, and managed service provider (MSP) environments. After a productive workday, I like to clear my head by hitting the gym or relaxing with friends over a good board game.
           </motion.p>
         </div>
       </div>

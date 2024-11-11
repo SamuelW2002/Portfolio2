@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import {Experience, Feedbacks, Hero, ProjectsCarousel, SkillsModelGrid } from "./components";
+import {Experience, Hero, ProjectsCarousel, SkillsModelGrid } from "./components";
 
 const App = () => {
   return (
@@ -10,7 +10,6 @@ const App = () => {
         <SkillsModelGrid/>
         <Experience />
         <ProjectsCarousel/>
-        <Feedbacks />
       </div>
     </BrowserRouter>
   );
