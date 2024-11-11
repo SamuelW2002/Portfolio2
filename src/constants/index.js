@@ -3,7 +3,6 @@ import { BackendCubeCanvas, CloudPyramidCanvas, FrontendPrismCanvas, MSPOctagonC
 import {
   csorc,
   pitchPlease,
-  linkedIn,
   mediaan,
   cegeka,
   madict,
@@ -17,8 +16,27 @@ import {
   Spring_Boot_Top_Side,
   StockTracker_Thumbnail,
   Portfolio_Thumbnail,
+
+  linkedIn,
   github,
-  solid_principles
+  Download,
+
+  solid_principles,
+
+  Angular,
+  Azure,
+  AzureBlobStorage,
+  AzureFunctions,
+  Blender,
+  Csharp,
+  Java,
+  Python,
+  React,
+  ThreeJS,
+  Vue,
+  AzureContainerApps,
+  Teamwork,
+  SpringBoot
 } from "../assets";
 
 export const navLinks = [
@@ -81,7 +99,7 @@ const skillsModelsFromBlender = [
     object: CloudPyramidCanvas,
   },
   {
-    title: "Managed Service Provider",
+    title: "Service Provider",
     object: MSPOctagonCanvas,
   }
 ]
@@ -113,7 +131,7 @@ const experiences = [
     ],
   },
   {
-    title: "IT Support Engineer",
+    title: "IT System Engineer",
     company_name: "MaDict",
     icon: madict,
     iconBg: "#FFFFFF",
@@ -131,39 +149,48 @@ const projects = [
   {
     name: "StockTracker",
     description:
-      "Combining my knowledge of Python and Azure Functions I designed my own newsletter that keeps track of the most popular stocks on Reddit.",
-    tags: [
-      {
-        name: "Azure",
-        color: "blue-text-gradient",
-      },
+      "Combining my knowledge of Python and Azure Functions I designed my own newsletter that keeps track of the most popular stocks on Reddit. \n Click the download button to see the inner workings.",
+    skills: [
       {
         name: "Python",
-        color: "green-text-gradient",
+        url: Python,
+      },
+      {
+        name: "Azure",
+        url: Azure,
+      },
+      {
+        name: "AzureFunctions",
+        url: AzureFunctions,
+      },
+      {
+        name: "AzureBlobStorage",
+        url: AzureBlobStorage,
       },
     ],
     image: StockTracker_Thumbnail,
-    //source_code_link: "https://github.com/",
-    //imageLink: github,
-    link: false,
-    //imageColor: "github"
+    imageLink: Download,
+    link: true,
+    download: true,
+    imageColor: "download",
+    downloadFile: "StockTracker_Documentation.pdf"
   },
   {
     name: "Portfolio Website",
     description:
-      "I wanted to create a unique portfolio that stands out, to achieve this I decided to learn blender and React-Three-Fiber from scratch. \n Check out the code and an in depth overview of my Three.js journey on my github page.",
-    tags: [
+      "I wanted to create a unique portfolio that stands out, to achieve this I decided to learn blender and React-Three-Fiber from scratch. \n Check out the code and an in depth overview of my Three.js journey on the github page.",
+    skills: [
       {
         name: "React",
-        color: "blue-text-gradient"
+        url: React
       },
       {
         name: "Three.js",
-        color: "blue-text-gradient"
+        url: ThreeJS
       },
       {
         name: "Blender",
-        color: "red-text-gradient"
+        url: Blender
       }
     ],
     image: Portfolio_Thumbnail,
@@ -176,10 +203,10 @@ const projects = [
     name: "SOLID principles in .NET",
     description:
       "Designing maintainable and understandable code is very important to me so I made a small console project in .NET highlighting SOLID principles and a Layered Architecture. On the github page u can find an description of why I implemented certain design choices.",
-    tags: [
+    skills: [
       {
         name: ".NET",
-        color: "blue-text-gradient",
+        url: Csharp,
       }
     ],
     image: solid_principles,
@@ -191,16 +218,20 @@ const projects = [
   {
     name: "CSOR²C Portal",
     description:
-      "Together with my team we developed a single pane of glass application for Cegeka where we integrated multiple services in single application. These integrations included technology like Entra ID (Azure Active Directory) and PowerBI.",
-    tags: [
+      "Together with my team and mentors at Cegeka we developed a single pane of glass application where we integrated multiple services in single application. These integrations included technology like Entra ID (Azure Active Directory) and PowerBI.",
+    skills: [
       {
         name: "java",
-        color: "blue-text-gradient",
+        url: Java,
       },
       {
         name: "vue",
-        color: "green-text-gradient",
+        url: Vue,
       },
+      {
+        name: "Spring Boot",
+        url: SpringBoot,
+      }
     ],
     image: csorc,
     //source_code_link: "https://github.com/",
@@ -211,8 +242,12 @@ const projects = [
   {
     name: "Pitch Please Hackathon",
     description:
-      "With the help of my team I won the Cegeka Pitch Please Hackathon where we learned how to quickly come up with a solution for a problem and pitch it.\n\nClick the LinkedIn symbol in the top right to view the video 😀",
-    tags: [
+      "With the help of my team I won the Cegeka Pitch Please Hackathon where we learned how to quickly come up with a solution for a problem and pitch it.\n\nClick the LinkedIn symbol in the bottom right to view the video 😀",
+    skills: [
+      {
+        name: "Teamwork",
+        url: Teamwork,
+      }
     ],
     image: pitchPlease,
     source_code_link: "https://www.linkedin.com/search/results/content/?keywords=cegeka%20pitch%20please&sid=kFZ&update=urn%3Ali%3Afs_updateV2%3A(urn%3Ali%3Aactivity%3A7157688163765731328%2CBLENDED_SEARCH_FEED%2CEMPTY%2CDEFAULT%2Cfalse)",
@@ -223,20 +258,24 @@ const projects = [
   {
     name: "SkillSeeker",
     description:
-      "We used a graph database and Dijkstra's Algorithm to create an advanced filtering system that allows better employee selection for projects.",
-    tags: [
+      "During my internship we used a graph database and Dijkstra's Algorithm to create an advanced filtering system that allows better employee selection for projects. \n For my thesis I studied all the different ways to utilize a database in the cloud and find the optimal solution for SkillSeeker.",
+    skills: [
       {
         name: "Angular",
-        color: "red-text-gradient",
+        url: Angular,
       },
       {
         name: "Azure",
-        color: "blue-text-gradient",
+        url: Azure,
       },
       {
         name: "Spring Boot",
-        color: "green-text-gradient",
+        url: SpringBoot,
       },
+      {
+        name: "Azure Container Apps",
+        url: AzureContainerApps,
+      }
     ],
     image: skillseeker,
     source_code_link: "https://github.com/",

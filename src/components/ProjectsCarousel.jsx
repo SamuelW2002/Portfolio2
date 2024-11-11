@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
@@ -12,10 +11,12 @@ const ProjectCard = ({
   index,
   name,
   description,
-  tags,
+  skills,
   image,
   source_code_link,
   link,
+  download,
+  downloadFile,
   imageLink,
   imageColor,
   isFocused,
@@ -48,25 +49,6 @@ const ProjectCard = ({
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl aspect-w-1 aspect-h-1"
           />
-
-          {link ? (
-            <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-              <div
-                onClick={() => window.open(source_code_link, "_blank")}
-                className={`${
-                  imageColor === "github"
-                    ? "black-gradient"
-                    : "blue-gradient"
-                } w-10 h-10 rounded-full flex justify-center items-center cursor-pointer`}
-              >
-                <img
-                  src={imageLink}
-                  alt="source code"
-                  className="w-1/2 h-1/2 object-contain"
-                />
-              </div>
-            </div>
-          ) : null}
         </div>
 
         <div className="mt-5">
@@ -77,11 +59,48 @@ const ProjectCard = ({
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
-              #{tag.name}
-            </p>
+          {skills.map((skill) => (
+            <Tilt>
+              <div className="rainbow-border w-20 h-20">
+                <img
+                  key={`${name}-${skill.name}`}
+                  src={skill.url}
+                  alt={skill.name}
+                  className={`h-full w-full rounded-lg transform rotate-3`}
+                />
+              </div>
+            </Tilt>
           ))}
+          {link ? (
+            <div className="ml-auto relative">
+              <div
+                onClick={() => {
+                  if (download) {
+                    const link = document.createElement("a");
+                    link.href = downloadFile;
+                    console.log(downloadFile)
+                    link.download = "StockTracker_Documentation.pdf";
+                    link.click();
+                  } else {
+                    window.open(source_code_link, "_blank");
+                  }
+                }}
+                className={`${
+                  imageColor === "github"
+                  ? "black-gradient"
+                  : imageColor === "download"
+                  ? "bg-black"
+                  : "blue-gradient"
+                } w-20 h-20 rainbow-border rounded-full flex justify-center items-center pulse-animation-wrapper cursor-pointer z-20`}
+              >
+                <img
+                  src={imageLink}
+                  alt="source code"
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          ) : null} 
         </div>
       </Tilt>
     </motion.div>
@@ -121,11 +140,11 @@ const Projects = () => {
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
-      <div {...bind()} className="xs:mb-10 md:mt-20 flex items-center justify-center relative h-[600px]">
+      <div {...bind()} className="flex justify-center relative h-[900px]">
         {currentIndex !== 0 && (
             <button
             onClick={handlePrev}
-            className="absolute left-10 text-white bg-blue-500 rounded-full p-4 z-10"
+            className="absolute left-10 text-white bg-blue-500 rounded-full p-4 z-10 self-center"
             >
             {"<"}
             </button>
@@ -157,7 +176,7 @@ const Projects = () => {
         {currentIndex !== projects.length - 1 && (
             <button
             onClick={handleNext}
-            className="absolute right-10 text-white bg-blue-500 rounded-full p-4 z-10"
+            className="absolute right-10 text-white bg-blue-500 rounded-full p-4 z-10 self-center"
             >
             {">"}
             </button>

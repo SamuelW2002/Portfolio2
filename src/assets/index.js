@@ -10,6 +10,7 @@ import menu from "./icons/menu.svg";
 import close from "./icons/close.svg";
 import peterKraus from "./icons/peterKraus.jpg";
 import linkedIn from "./icons/LinkedIn.png";
+import Download from "./icons/Download.png";
 
 //Backend Cube
 import C_Right_Side from "./tech/Backend_Cube/C_Right_Side.png"
@@ -35,7 +36,40 @@ import StockTracker_Thumbnail from "./projects/StockTracker_Thumbnail.webp"
 //Background
 import objectBackground from "./objectBackgrounds/originalBackground.png";
 
+//Skills
+import Angular from "./tech/skills/Angular.png"
+import Azure from "./tech/skills/Azure.png"
+import AzureBlobStorage from "./tech/skills/AzureBlobStorage.png"
+import AzureFunctions from "./tech/skills/AzureFunctions.png"
+import Blender from "./tech/skills/Blender.png"
+import Csharp from "./tech/skills/Csharp.png"
+import Java from "./tech/skills/Java.png"
+import Python from "./tech/skills/Python.png"
+import React from "./tech/skills/React.png"
+import SpringBoot from "./tech/skills/SpringBoot.png"
+import ThreeJS from "./tech/skills/ThreeJS.png"
+import Vue from "./tech/skills/Vue.png"
+import AzureContainerApps from "./tech/skills/AzureContainerApps.png"
+import Teamwork from "./tech/skills/Teamwork.png"
+
+
+
 export {
+  Angular,
+  Azure,
+  AzureBlobStorage,
+  AzureFunctions,
+  Blender,
+  Csharp,
+  Java,
+  Python,
+  React,
+  SpringBoot,
+  ThreeJS,
+  Vue,
+  AzureContainerApps,
+  Teamwork,
+
   objectBackground,
   backend,
   fitness,
@@ -57,6 +91,8 @@ export {
   madict,
   peterKraus,
   cloud,
+  Download,
+
   C_Right_Side,
   API_Back_Side,
   Java_left_Side,

@@ -1,13 +1,13 @@
 import { BrowserRouter } from "react-router-dom";
 
-import {Experience, Feedbacks, Hero, Projects, ProjectsCarousel, ServiceCardGrid } from "./components";
+import {Experience, Feedbacks, Hero, ProjectsCarousel, SkillsModelGrid } from "./components";
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary bg-hero-pattern bg-cover bg-center overflow-x-hidden'>
         <Hero />
-        <ServiceCardGrid/>
+        <SkillsModelGrid/>
         <Experience />
         <ProjectsCarousel/>
         <Feedbacks />
