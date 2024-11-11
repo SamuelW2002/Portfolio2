@@ -140,7 +140,7 @@ const Projects = () => {
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
-      <div {...bind()} className="flex justify-center relative h-[900px]">
+      <div {...bind()} className="flex justify-center relative h-[1000px]">
         {currentIndex !== 0 && (
             <button
             onClick={handlePrev}
