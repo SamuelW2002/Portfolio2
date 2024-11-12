@@ -200,6 +200,35 @@ const projects = [
     imageColor: "github"
   },
   {
+    name: "SkillSeeker",
+    description:
+      "During my internship we used a graph database and Dijkstra's Algorithm to create an advanced filtering system that allows better employee selection for projects. \n For my thesis I studied all the different ways to utilize a database in the cloud and find the optimal solution for SkillSeeker. Click the download button below to read my thesis.",
+    skills: [
+      {
+        name: "Angular",
+        url: Angular,
+      },
+      {
+        name: "Azure",
+        url: Azure,
+      },
+      {
+        name: "Spring Boot",
+        url: SpringBoot,
+      },
+      {
+        name: "Azure Container Apps",
+        url: AzureContainerApps,
+      }
+    ],
+    image: skillseeker,
+    imageLink: Download,
+    link: true,
+    download: true,
+    imageColor: "download",
+    downloadFile: "Eindwerk_Wouters_Samuel.docx"
+  },
+  {
     name: "SOLID principles in .NET",
     description:
       "Designing maintainable and understandable code is very important to me so I made a small console project in .NET highlighting SOLID principles and a Layered Architecture. On the github page u can find an description of why I implemented certain design choices.",
@@ -254,31 +283,6 @@ const projects = [
     link: true,
     imageLink: linkedIn,
     imageColor: "linkedIn"
-  },
-  {
-    name: "SkillSeeker",
-    description:
-      "During my internship we used a graph database and Dijkstra's Algorithm to create an advanced filtering system that allows better employee selection for projects. \n For my thesis I studied all the different ways to utilize a database in the cloud and find the optimal solution for SkillSeeker.",
-    skills: [
-      {
-        name: "Angular",
-        url: Angular,
-      },
-      {
-        name: "Azure",
-        url: Azure,
-      },
-      {
-        name: "Spring Boot",
-        url: SpringBoot,
-      },
-      {
-        name: "Azure Container Apps",
-        url: AzureContainerApps,
-      }
-    ],
-    image: skillseeker,
-    source_code_link: "https://github.com/",
   },
 ];
 

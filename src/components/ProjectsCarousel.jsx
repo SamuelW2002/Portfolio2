@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -21,6 +21,11 @@ const ProjectCard = ({
   imageColor,
   isFocused,
   position,
+  isSmallScreen,
+  handleNext,
+  handlePrev,
+  currentIndex,
+  arrayLength
 }) => {
   return (
     <motion.div
@@ -46,12 +51,26 @@ const ProjectCard = ({
           />
         </div>
 
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+        <div className="mt-5 flex items-center justify-between">
+          {isSmallScreen && currentIndex !== 0 && (
+            <button onClick={handlePrev} className="text-white bg-blue-500 rounded-full p-4">
+              {"<"}
+            </button>
+          )}
+
+          <h3 className="text-white font-bold text-[24px] text-center flex-grow">
+            {name}
+          </h3>
+
+          {isSmallScreen && currentIndex !== projects.length - 1 && (
+            <button onClick={handleNext} className="text-white bg-blue-500 rounded-full p-4">
+              {">"}
+            </button>
+          )}
+        </div>
           <p className="mt-2 text-secondary text-[14px]" style={{ whiteSpace: "pre-line" }}>
             {description}
           </p>
-        </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
           {skills.map((skill) => (
@@ -74,7 +93,7 @@ const ProjectCard = ({
                     const link = document.createElement("a");
                     link.href = downloadFile;
                     console.log(downloadFile)
-                    link.download = "StockTracker_Documentation.pdf";
+                    link.download = downloadFile;
                     link.click();
                   } else {
                     window.open(source_code_link, "_blank");
@@ -104,6 +123,18 @@ const ProjectCard = ({
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isSmall = window.innerWidth < 768;
+      setIsSmallScreen(isSmall);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => prevIndex + 1);
@@ -136,13 +167,13 @@ const Projects = () => {
       </motion.div>
 
       <div {...bind()} className="flex justify-center relative h-[1000px]">
-        {currentIndex !== 0 && (
-            <button
+        {!isSmallScreen && currentIndex !== 0 && (
+          <button
             onClick={handlePrev}
             className="absolute left-10 text-white bg-blue-500 rounded-full p-4 z-10 self-center"
-            >
+          >
             {"<"}
-            </button>
+          </button>
         )}
 
         {projects.map((project, index) => {
@@ -163,18 +194,23 @@ const Projects = () => {
                       {...project}
                       isFocused={index === currentIndex}
                       position={position}
+                      isSmallScreen={isSmallScreen}
+                      handlePrev={handlePrev}
+                      handleNext={handleNext}
+                      currentIndex={currentIndex}
+                      arrayLength={projects.length}
                     />
                   );
             }
         })}
 
-        {currentIndex !== projects.length - 1 && (
-            <button
+        {!isSmallScreen && currentIndex !== projects.length - 1 && (
+          <button
             onClick={handleNext}
             className="absolute right-10 text-white bg-blue-500 rounded-full p-4 z-10 self-center"
-            >
+          >
             {">"}
-            </button>
+          </button>
         )}
       </div>
     </>
