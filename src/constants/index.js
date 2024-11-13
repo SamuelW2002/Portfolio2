@@ -110,10 +110,10 @@ const experiences = [
     company_name: "Cegeka | School Collaboration Project",
     icon: cegeka,
     iconBg: "#FFFFFF",
-    date: "Oktober 2023 - December 2023",
+    date: "October 2023 - December 2023",
     points: [
       "Developing the CSORC backend in Java Spring Boot",
-      "Creating an user friendly interface using Vue.js",
+      "Creating a user-friendly interface using Vue.js",
       "Applying Agile principles for a streamlined development process",
     ],
   },
@@ -122,7 +122,7 @@ const experiences = [
     company_name: "Mediaan | Internship",
     icon: mediaan,
     iconBg: "#FFFFFF",
-    date: "Februari 2024 - June 2024",
+    date: "February 2024 - June 2024",
     points: [
       "Developing the SkillSeeker backend using Java Spring Boot",
       "Allowing SkillSeeker to be used around the world by setting up an Azure Cloud Infrastructure",
@@ -135,7 +135,7 @@ const experiences = [
     company_name: "MaDict",
     icon: madict,
     iconBg: "#FFFFFF",
-    date: "Juli 2024 - Present",
+    date: "July 2024 - Present",
     points: [
       "Configuring and maintaining network infrastructure using Fortinet firewalls and a variety of switches",
       "Setting up O365 tenants for clients and solving a wide variety of Office related issues",
@@ -231,7 +231,7 @@ const projects = [
   {
     name: "SOLID principles in .NET",
     description:
-      "Designing maintainable and understandable code is very important to me so I made a small console project in .NET highlighting SOLID principles and a Layered Architecture. On the github page u can find an description of why I implemented certain design choices.",
+      "Designing maintainable and understandable code is very important to me so I made a small console project in .NET highlighting SOLID principles and a Layered Architecture. On the github page you can find an description of why I implemented certain design choices.",
     skills: [
       {
         name: ".NET",
