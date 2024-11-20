@@ -44,5 +44,8 @@ A pentagon can be drawn by combining 3 triangles, so to create the top side of t
 For the sides, wich are rectangles, we only need 2 triangles.
 However i will show an example where i use 3 triangles to draw a rectangle, this shows that there is no fixed way of using Three.js
 
+![image](https://github.com/user-attachments/assets/01f95e71-a529-43b8-8f5b-2dfb33283166)
+
+I circled the face i w
 
 
