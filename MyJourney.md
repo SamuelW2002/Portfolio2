@@ -190,7 +190,7 @@ Next I need the exported PNG to keep the same dimensions as the UV map so I drew
 
 Then I deleted the UV map PNG.
 
-![image](https://github.com/user-attachments/assets/6f5c08a5-868b-4793-a4f8-d2b2e88f2343
+![image](https://github.com/user-attachments/assets/17918f45-7632-42f2-9e1a-a2c49597ebfe)
 
 Lastly I made the sides of the rectangle invisible and exported the PNG, because the rectangle was still present the PNG keeps the perfect dimensions.
 Importing it into blender gives the folowing result.
