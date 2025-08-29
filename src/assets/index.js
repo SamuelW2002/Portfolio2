@@ -24,6 +24,7 @@ import Spring_Boot_Top_Side from "./tech/Backend_Cube/Spring_Boot_Top_Side.png"
 import cegeka from "./company/cegeka.png"
 import madict from "./company/madict.png"
 import mediaan from "./company/mediaan.png"
+import deca from "./company/deca.jpg"
 
 //Projects
 import pitchPlease from "./projects/PitchPlease.png";
@@ -32,6 +33,8 @@ import skillseeker from "./projects/SkillSeeker.png"
 import solid_principles from "./projects/SOLID_Thumbnail.gif"
 import Portfolio_Thumbnail from "./projects/Portfolio_Thumbnail.webp"
 import StockTracker_Thumbnail from "./projects/StockTracker_Thumbnail.webp"
+import Workout_App from "./projects/Workout_App.png"
+import Server_Room_Cleanup from "./projects/Server_Room_Cleanup.gif"
 
 //Background
 import objectBackground from "./objectBackgrounds/originalBackground.png";
@@ -51,6 +54,10 @@ import ThreeJS from "./tech/skills/ThreeJS.png"
 import Vue from "./tech/skills/Vue.png"
 import AzureContainerApps from "./tech/skills/AzureContainerApps.png"
 import Teamwork from "./tech/skills/Teamwork.png"
+import Flutter from "./tech/skills/Flutter.jpg"
+import Firebase from "./tech/skills/firebase.png"
+import GCP from "./tech/skills/google-cloud.png"
+import Gemini from "./tech/skills/gemini.webp"
 
 
 
@@ -69,6 +76,10 @@ export {
   Vue,
   AzureContainerApps,
   Teamwork,
+  Flutter,
+  Firebase,
+  GCP,
+  Gemini,
 
   objectBackground,
   backend,
@@ -84,11 +95,15 @@ export {
   Portfolio_Thumbnail,
   StockTracker_Thumbnail,
   solid_principles,
+  Workout_App,
+  Server_Room_Cleanup,
 
   linkedIn,
   mediaan,
   cegeka,
   madict,
+  deca,
+
   peterKraus,
   cloud,
   Download,

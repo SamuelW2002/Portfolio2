@@ -6,6 +6,8 @@ import {
   mediaan,
   cegeka,
   madict,
+  deca,
+
   skillseeker,
   peterKraus,
   C_Right_Side,
@@ -16,6 +18,8 @@ import {
   Spring_Boot_Top_Side,
   StockTracker_Thumbnail,
   Portfolio_Thumbnail,
+  Workout_App,
+  Server_Room_Cleanup,
 
   linkedIn,
   github,
@@ -36,7 +40,11 @@ import {
   Vue,
   AzureContainerApps,
   Teamwork,
-  SpringBoot
+  SpringBoot,
+  Flutter,
+  GCP,
+  Firebase,
+  Gemini
 } from "../assets";
 
 export const navLinks = [
@@ -112,9 +120,9 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: "October 2023 - December 2023",
     points: [
-      "Developing the CSORC backend in Java Spring Boot",
-      "Creating a user-friendly interface using Vue.js",
-      "Applying Agile principles for a streamlined development process",
+      "Developing the CSORC backend in Java Spring Boot.",
+      "Creating a user-friendly interface using Vue.js.",
+      "Applying Agile principles for a streamlined development process.",
     ],
   },
   {
@@ -124,10 +132,10 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: "February 2024 - June 2024",
     points: [
-      "Developing the SkillSeeker backend using Java Spring Boot",
-      "Allowing SkillSeeker to be used around the world by setting up an Azure Cloud Infrastructure",
-      "Creating pipelines for seamless deployment to the cloud",
-      "Leading a team of developers and meeting with customers to deliver the best possible result"
+      "Developing the SkillSeeker backend using Java Spring Boot.",
+      "Allowing SkillSeeker to be used around the world by setting up an Azure Cloud Infrastructure.",
+      "Creating pipelines for seamless deployment to the cloud.",
+      "Leading a team of developers and meeting with customers to deliver the best possible result."
     ],
   },
   {
@@ -135,17 +143,65 @@ const experiences = [
     company_name: "MaDict",
     icon: madict,
     iconBg: "#FFFFFF",
-    date: "July 2024 - Present",
+    date: "July 2024 - Februari 2025",
     points: [
-      "Configuring and maintaining network infrastructure using Fortinet firewalls and a variety of switches",
-      "Setting up O365 tenants for clients and solving a wide variety of Office related issues",
-      "Creating and maintaining Windows Servers for medium and small businesses",
-      "Using a wide variety of MSP tools to provide the customer with the best IT experience"
+      "Configuring and maintaining network infrastructure using Fortinet firewalls and a variety of switches.",
+      "Setting up O365 tenants for clients and solving a wide variety of Office related issues.",
+      "Creating and maintaining Windows Servers for medium and small businesses.",
+      "Using a wide variety of MSP tools to provide the customer with the best IT experience."
+    ],
+  },
+    {
+    title: "Fullstack Developer and Systems Admin",
+    company_name: "DECA",
+    icon: deca,
+    iconBg: "#1a3d8f",
+    date: "March 2025 - August 2025",
+    points: [
+      "Developed a Machine Learning algorithm using Constraint Programming to automate and optimize the production planning.",
+      "Creating full stack internal applications to improve operational efficiency.",
+      "Administrating the local servers and firewall and maintaing infrastructure.",
     ],
   }
 ];
 
 const projects = [
+    {
+    name: "LLM powered workout app",
+    description:
+      "As a gym enthusiast I started a small project to make it easier for me to track my meals and workouts. \n However my mind started racing and this quickly became a full LLM powered project using Google Cloud Functions/Tasks and the Gemini API.",
+    skills: [
+      {
+        name: "Flutter",
+        url: Flutter,
+      },
+      {
+        name: "Firebase",
+        url: Firebase,
+      },
+      {
+        name: "Google Cloud",
+        url: GCP,
+      },
+      {
+        name: "Gemini",
+        url: Gemini,
+      },
+    ],
+    image: Workout_App,
+    link: false,
+    download: false,
+  },
+  {
+    name: "Server Room Restructure",
+    description:
+      "I am extremely proud of the restructuring job I did on 2 serverrooms that had been neglected for over 10 years, so I wanted to share it as a project.",
+    skills: [
+    ],
+    image: Server_Room_Cleanup,
+    link: false,
+    download: false,
+  },
   {
     name: "StockTracker",
     description:

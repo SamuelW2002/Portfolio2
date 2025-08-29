@@ -27,7 +27,7 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            className='w-[80%] h-[80%] object-contain'
           />
         </div>
       }
@@ -70,7 +70,7 @@ const Experience = () => {
 
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
+          {experiences.slice().reverse().map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}
               experience={experience}
