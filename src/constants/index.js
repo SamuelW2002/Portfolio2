@@ -133,7 +133,7 @@ const experiences = [
     date: "February 2024 - June 2024",
     points: [
       "Developing the SkillSeeker backend using Java Spring Boot.",
-      "Allowing SkillSeeker to be used around the world by setting up an Azure Cloud Infrastructure.",
+      "I enabled SkillSeeker to be used from anywhere by setting up an Azure Cloud Infrastructure.",
       "Creating pipelines for seamless deployment to the cloud.",
       "Leading a team of developers and meeting with customers to deliver the best possible result."
     ],
@@ -148,7 +148,7 @@ const experiences = [
       "Configuring and maintaining network infrastructure using Fortinet firewalls and a variety of switches.",
       "Setting up O365 tenants for clients and solving a wide variety of Office related issues.",
       "Creating and maintaining Windows Servers for medium and small businesses.",
-      "Using a wide variety of MSP tools to provide the customer with the best IT experience."
+      "I used a wide variety of MSP tools to provide customers with the best IT experience."
     ],
   },
     {
@@ -234,7 +234,7 @@ const projects = [
   {
     name: "Portfolio Website",
     description:
-      "I wanted to create a unique portfolio that stands out, to achieve this I decided to learn blender and React-Three-Fiber from scratch. \n Check out the code and an in depth overview of my Three.js journey on the github page.",
+      "I wanted to create a unique portfolio that stands out; to achieve, this I decided to learn blender and React-Three-Fiber from scratch. \n Check out the code and an in depth overview of my Three.js journey on the github page.",
     skills: [
       {
         name: "React",
