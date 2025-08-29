@@ -17,7 +17,7 @@ const Hero = () => {
           </motion.h1>
         
           <motion.p variants={fadeIn("", "", 0.2, 1)} className="mt-2 text-secondary text-[17px] max-w-3xl leading-[30px]">
-            I am a full stack developer with a bachelors degree in application development. I have a passion for everything related to new technology and innovation. In my free time I love going to the gym, play boardgames with friends and go to metal concerts 🤘
+            I am a full stack developer with a bachelor's degree in application development. I have a passion for everything related to new technology and innovation. In my free time I love going to the gym, play boardgames with friends and go to metal concerts 🤘
           </motion.p>
         </div>
       </div>
