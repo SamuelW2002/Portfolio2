@@ -115,7 +115,7 @@ const skillsModelsFromBlender = [
 const experiences = [
   {
     title: "Backend Software Developer",
-    company_name: "Cegeka | School Collaboration Project",
+    company_name: "Cegeka | Freelance",
     icon: cegeka,
     iconBg: "#FFFFFF",
     date: "October 2023 - December 2023",
@@ -127,7 +127,7 @@ const experiences = [
   },
   {
     title: "Software Developer | Cloud Architect",
-    company_name: "Mediaan | Internship",
+    company_name: "Mediaan | Freelance",
     icon: mediaan,
     iconBg: "#FFFFFF",
     date: "February 2024 - June 2024",
