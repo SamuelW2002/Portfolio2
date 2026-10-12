@@ -6,7 +6,7 @@ import {
   mediaan,
   cegeka,
   madict,
-  deca,
+  amotek,
 
   skillseeker,
   peterKraus,
@@ -143,7 +143,7 @@ const experiences = [
     company_name: "MaDict",
     icon: madict,
     iconBg: "#FFFFFF",
-    date: "July 2024 - Februari 2025",
+    date: "July 2024 - February 2025",
     points: [
       "Configuring and maintaining network infrastructure using Fortinet firewalls and a variety of switches.",
       "Setting up O365 tenants for clients and solving a wide variety of Office related issues.",
@@ -153,12 +153,11 @@ const experiences = [
   },
     {
     title: "Fullstack Developer and Systems Admin",
-    company_name: "DECA",
-    icon: deca,
-    iconBg: "#1a3d8f",
-    date: "March 2025 - August 2025",
+    company_name: "AMOTEK Technologies",
+    icon: amotek,
+    iconBg: "#000000",
+    date: "February 2025 - Present",
     points: [
-      "Developed a Machine Learning algorithm using Constraint Programming to automate and optimize the production planning.",
       "Creating full stack internal applications to improve operational efficiency.",
       "Administrating the local servers and firewall and maintaing infrastructure.",
     ],

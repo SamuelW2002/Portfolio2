@@ -24,7 +24,7 @@ import Spring_Boot_Top_Side from "./tech/Backend_Cube/Spring_Boot_Top_Side.png"
 import cegeka from "./company/cegeka.png"
 import madict from "./company/madict.png"
 import mediaan from "./company/mediaan.png"
-import deca from "./company/deca.jpg"
+import amotek from "./company/amotek.svg"
 
 //Projects
 import pitchPlease from "./projects/PitchPlease.png";
@@ -102,7 +102,7 @@ export {
   mediaan,
   cegeka,
   madict,
-  deca,
+  amotek,
 
   peterKraus,
   cloud,
